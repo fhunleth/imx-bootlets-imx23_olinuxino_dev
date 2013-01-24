@@ -19,6 +19,8 @@
 
 #if defined (BOARD_STMP378X_DEV)
 #define	MACHINE_ID	0xa45
+#elif defined (BOARD_IMX23_OLINUXINO_DEV)
+#define MACHINE_ID 	0x1009
 #else
 #error "Allocate a machine ID for your board"
 #endif

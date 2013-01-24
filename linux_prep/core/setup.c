@@ -84,6 +84,8 @@ static void *memcpy(void *s1, const void *s2, int n)
 #include "../../mach-mx28/includes/registers/regsrtc.h"
 #elif defined(STMP378X)
 #include "../../mach-mx23/includes/registers/regsrtc.h"
+#elif defined(IMX23_OLINUXINO)
+#include "../../mach-mx23/includes/registers/regsrtc.h"
 #endif
 
 #define NAND_SECONDARY_BOOT          0x00000002

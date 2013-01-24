@@ -16,6 +16,9 @@ endif
 ifeq ($(BOARD), iMX28_EVK)
 ARCH = mx28
 endif
+ifeq ($(BOARD), imx23_olinuxino_dev)
+ARCH = mx23
+endif
 
 all: build_prep gen_bootstream
 

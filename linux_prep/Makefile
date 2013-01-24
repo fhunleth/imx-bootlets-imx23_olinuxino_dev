@@ -69,6 +69,11 @@ ARCH = mx28
 HW_OBJS = $(LRADC_OBJS)
 CFLAGS += -DMX28 -DBOARD_MX28_EVK
 endif
+ifeq ($(BOARD), imx23_olinuxino_dev)
+ARCH = mx23
+HW_OBJS = $(LRADC_OBJS)
+CFLAGS += -DIMX23_OLINUXINO -DBOARD_IMX23_OLINUXINO_DEV
+endif
 
 # Generic code
 CORE_OBJS = entry.o resume.o cmdlines.o setup.o keys.o
